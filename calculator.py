@@ -5,8 +5,13 @@ import sys
 class Calculator(QWidget):
     def __init__(self):
         super().__init__()
-
+        self.left = 1000
+        self.top = 800
+        self.width = 800
+        self.height = 800
         self.setWindowTitle("Calculator")
+        self.setGeometry(self.left, self.top, self.width, self.height)
+       
 
         layout = QVBoxLayout()
         self.setLayout(layout)
